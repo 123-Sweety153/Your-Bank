@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
+body{
+     font-family: "Lexend", sans-serif;
+     
+}
+
+@theme{
+     --color-primary:#CAFF33
+}
+
+@layer components{
+     .button{
+          color: #1c1c1c; 
+          background-color: #CAFF33; 
+          padding: 14px 24px; 
+          border-radius: 50px;
+          transition: all; 
+          cursor: pointer;
+     }
+
+     .button:hover{
+          background-color: #d1d1d1;
+     }
+}
