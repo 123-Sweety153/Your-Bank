@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7cb2fd1225.js" crossorigin="anonymous"></script>
+    <title>YourBank Apps</title>
+</head>
+<body class="bg-[#191919]">
+<div>
+    <img src="images/Abstractleft.png" alt="Abstract BG" class="absolute top-0  left-0 w-1/2 h-1/2 -z-10">
+</div> 
+
+<!--Header Section-->
+<header class="flex items-center justify-between w-[80%] bg-[#1c1c1c] mx-auto px-5 py-4 rounded-full mt-10 mb-20">
+    <div>
+        <img src="images/Logo.png" alt="Logo">
+    </div>
+
+    <!--Mobile menu icon-->
+    <div class="md:hidden">
+        <button id="mobile-menu-button">
+            <i class="fa-solid fa-bars text-white text-[2rem]"></i>
+        </button>
+    </div>
+
+    <!--Nav menu-->
+    <nav class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-white px-4 py-2 bg-[#262626] hover:bg-[#4b4a4a] rounded-full transition">Home</a>
+        <a href="careers.html" class="text-white hover:text-[#747070] transition">Careers</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">About</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">Security</a>
+    </nav>
+
+    <div class="hidden md:flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-[#747070] transition">Sign Up</a>
+        <a href="#" class="text-[#1c1c1c] bg-[#CAFF33] px-5 py-2 rounded-full hover:bg-[#d1d1d1]">Login</a>
+    </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-[#191919]/95 z-50 flex flex-col items-center justify-center hidden">
+    <div class="absolute top-4 right-4">
+        <button id="close-menu-button"><i class="fa-solid fa-xmark text-white text-[2.5rem]"></i></button>
+    </div>
+    <nav class="flex flex-col items-center space-y-6">
+        <a href="#" class="text-white px-4 py-2 bg-[#262626] hover:bg-[#4b4a4a] rounded-full transition">Home</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">Careers</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">About</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">Security</a>
+        <a href="#" class="text-white hover:text-[#747070] transition">Sign Up</a>
+        <a href="#" class="text-[#1c1c1c] bg-[#CAFF33] px-5 py-2 rounded-full hover:bg-[#d1d1d1]">Login</a>
+    </nav>  
+</div>
+
+<!--Main Content-->
+
+
+<!--Footer Section-->
+<footer class="bg-[#1C1C1C] py-16">
+    <div class="w-[78%] mx-auto">
+        <div class="flex flex-col justify-center items-center mb-10">
+           <img src="images/Logo.png" alt="">
+
+           <nav class="flex items-center space-x-8 mb-10">
+            <a href="#" class="text-white hover:text-primary ">Home</a>
+            <a href="#" class="text-white hover:text-primary ">Careers</a>
+            <a href="#" class="text-white hover:text-primary ">About</a>
+            <a href="#" class="text-white hover:text-primary ">Security</a>
+           </nav>
+        </div>
+
+        <div class="border-t border-b border-primary/5 items-center justify-center flex flex-col md:flex-row gap-6 p-6 mb-8 w-[78%] mx-auto">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-message text-primary"></i>
+                <span class="text-white">hello@skillbirdge.com</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone-flip text-primary"></i>
+                <span class="text-white">+91 91813 23 2309</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-primary"></i>
+                <span class="text-white">Somewhere in the World</span>
+            </div>
+        </div>
+
+       <div class="flex flex-col md:flex-row items-center justify-between w-[78%] mx-auto">
+              <div class="flex space-x-4">
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-facebook-f text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-twitter text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-linkedin text-black"></i></a>
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5">
+                YourBank All Rights Reserved
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5 md:mt-0">
+                <a href="#" class="hover:text-primary">Privacy Policy</a>
+
+                <span class="mx-2">|</span>
+
+                <a href="#" class="hover:text-primary">Terms of Service</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Mobile Menu JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex");
+          document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+        });
+
+        closeMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("flex");
+          mobileMenu.classList.add("hidden");
+          document.body.style.overflow = ""; // Re-enable scrolling
+        });
+      });
+    </script>
+   
+    
+</body>
+</html>
