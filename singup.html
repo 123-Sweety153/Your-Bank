@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7cb2fd1225.js" crossorigin="anonymous"></script>
+    <title>YourBank Apps</title>
+</head>
+<body class="bg-[#191919]">
+    <!--Header Section-->
+    <header class="flex items-center justify-between bg-[#1c1c1c] px-5 py-4 rounded-full mx-auto w-[80%] mt-10 mb-20">
+        <div>
+            <img src="images/Logo.png" alt="">
+        </div>
+
+        <!--Mobile Menu Icon-->
+        <div class="md:hidden">
+            <button class="mobile menu button">
+                <i class="fa-solid fa-bars text-white text-[2rem]"></i> 
+            </button> 
+        </div>
+
+        <!--Nav Menu-->
+        <nav class="hidden md:flex items-center space-x-6 ">
+            <a href="index.html" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="careers.html" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="about.html" class="text-white px-4 py-2  rounded-full hover:bg-[#4b4a4a] transition">About</a>
+            <a href="security.html"  class="text-white px-4 py-2 bg-[#262626] hover:bg-[#4b4a4a] rounded-full transition">Security</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="#" class="text-white hover:text-[#747070] transition">Sign Up</a>
+            <a href="login.html" class="bg-primary text-[#1c1c1c] px-5 py-2 rounded-full hover:bg-[#d1d1d1]">Login</a>
+        </div>
+    </header>
+
+    <div id="mobile menu" class="fixed flex flex-col bg-[#191919]/95 items-center inset-0 z-50 justify-center hidden">
+        <div class="absolute top-4 right-4">
+            <button class="close menu button">
+                <i class="fa-solid fa-xmark text-white text-[3rem]"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col items-center space-y-6 ">
+            <a href="#" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">About</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">Security</a>
+        </nav>
+    </div>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7cb2fd1225.js" crossorigin="anonymous"></script>
+    <title>YourBank Apps</title>
+</head>
+<body class="bg-[#191919]">
+    <!--Header Section-->
+    <header class="flex items-center justify-between bg-[#1c1c1c] px-5 py-4 rounded-full mx-auto w-[80%] mt-10 mb-20">
+        <div>
+            <img src="images/Logo.png" alt="">
+        </div>
+
+        <!--Mobile Menu Icon-->
+        <div class="md:hidden">
+            <button class="mobile menu button">
+                <i class="fa-solid fa-bars text-white text-[2rem]"></i> 
+            </button> 
+        </div>
+
+        <!--Nav Menu-->
+        <nav class="hidden md:flex items-center space-x-6 ">
+            <a href="index.html" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="careers.html" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="about.html" class="text-white px-4 py-2  rounded-full hover:bg-[#4b4a4a] transition">About</a>
+            <a href=""  class="text-white px-4 py-2 bg-[#262626] hover:bg-[#4b4a4a] rounded-full transition">Security</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="singup.html" class="text-white hover:text-[#747070] transition">Sign Up</a>
+            <a href="#" class="bg-primary text-[#1c1c1c] px-5 py-2 rounded-full hover:bg-[#d1d1d1]">Login</a>
+        </div>
+    </header>
+
+    <div id="mobile menu" class="fixed flex flex-col bg-[#191919]/95 items-center inset-0 z-50 justify-center hidden">
+        <div class="absolute top-4 right-4">
+            <button class="close menu button">
+                <i class="fa-solid fa-xmark text-white text-[3rem]"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col items-center space-y-6 ">
+            <a href="#" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">About</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">Security</a>
+        </nav>
+    </div>
+
+    <!--Hero Section-->
+    <!--img-->
+    <main class="bg-[#1C1C1C] flex flex-col justify-end md:py-8 w-[78%] mx-auto">
+        <section class="mt-5 md:my-14">
+            <div class="flex items-center justify-end">
+                <div class="bg-[url(/images/security.png)] bg-cover bg-center md:h-[440px] h-75 md:w-[60%] w-full rounded-2xl shadow"></div>
+                </div>   
+            </div>
+
+            <!-- text -->
+            <div class="md:absolute bg-[#1A1A1A] w-[45%] md:p-5 mt-12 md:mt-12 rounded-4xl md:top-55 md:ml-6">
+                <h5 class="text-white mb-3">Welcome to YourBank</h5>
+                <h1 class="text-white font-bold text-center text-4xl md:text-left mb-4">Welcome to <span class="text-primary">YourBank</span><br> Careers!</h1>
+                <p class="text-gray-400 text-sm mt-6 md:mt-6 md:text-left text-center">Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking.</p>  
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Protect Section -->
+     <section class="py-16">
+        <div class="w-[78%] mx-auto">
+            <h2 class="text-white font-bold text-4xl md:text-3xl mb-3">How We <span class="text-primary">Protect You</span></h2>
+            <p class="text-gray-400 text-sm">At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times</p>
+        </div>
+
+        <div>
+            <div class="grid grid-cols-2">
+                <div>
+                    <img src="images/SIcon1.png" alt="">
+                    <h4 class="text-white font-bold text-xl">Secure Online Banking Platform</h4>
+                </div>
+
+                <div>
+                    <p class="text-gray-400">Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.</p>
+                </div> 
+            </div>
+        </div>
+     </section>
+
+
+    <!--Question Section-->
+    <section class="py-16">
+        <div class="w-[78%] mx-auto">
+            <h2 class="text-white font-bold md:text-4xl text-2xl mb-4"><span class="text-primary">Frequently</span> Asked Questions</h2>
+            <p class="text-gray-400 text-sm pb-12">Still you have any questions? Contact our Team via support@yourbank.com</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="outline outline-primary/5 px-12 py-9 rounded-xl">
+                <h3 class="text-white font-semibold text-xl mb-5 pb-6 border-b border-primary/5">How do I open an account with YourBank?</h3>
+
+                <p class="text-gray-400">Opening an account with YourBank is easy. Simply visit our website and click on the "Open an Account" button. Follow the prompts, provide the required information, and complete the application process. If you have any questions or need assistance, our customer support team is available to help.</p>
+            </div>
+
+            <div class="outline outline-primary/5 px-12 py-9 rounded-xl">
+                <h3 class="text-white font-semibold text-xl border-b border-primary/5 mb-5 pb-6">What documents do I need to provide to apply for a loan?</h3>
+
+                <p class="text-gray-400">The documents required for a loan application may vary depending on the type of loan you are applying for. Generally, you will need to provide identification documents (such as a passport or driver's license), proof of income (such as pay stubs or tax returns), and information about the collateral (if applicable). Our loan officers will guide you through the specific requirements during the application process.</p>
+            </div>
+
+            <div class="outline outline-primary/5 px-12 py-9 rounded-xl">
+                <h3 class="text-white font-semibold text-xl border-b border-primary/5 mb-5 pb-6">What documents do I need to provide to apply for a loan?</h3>
+
+                <p class="text-gray-400">Accessing your accounts online is simple and secure. Visit our website and click on the "Login" button. Enter your username and password to access your accounts. If you haven't registered for online banking, click on the "Enroll Now" button and follow the registration process. If you need assistance, our customer support team is available to guide you.</p>
+            </div>
+
+            <div class="outline outline-primary/5 px-12 py-9 rounded-xl">
+                <h3 class="text-white font-semibold text-xl border-b border-primary/5 mb-5 pb-6">Are my transactions and personal information secure?</h3>
+
+                <p class="text-gray-400">At YourBank, we prioritize the security of your transactions and personal information. We employ industry-leading encryption and multi-factor authentication to ensure that your data is protected. Additionally, we regularly update our security measures to stay ahead of emerging threats. You can bank with confidence knowing that we have robust security systems in place.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <button class="text-white font-medium bg-[#22251B] px-6 py-3 rounded-full cursor-pointer">Load All FAQ’s <i class="fa-solid fa-angle-down text-lg ml-2"></i></button>
+        </div>
+    </section>
+
+
+
+<!--Footer Section-->
+<footer class="bg-[#1C1C1C] py-16">
+    <div class="w-[78%] mx-auto">
+        <div class="flex flex-col justify-center items-center mb-10">
+           <img src="images/Logo.png" alt="">
+
+           <nav class="flex items-center space-x-8 mb-10">
+            <a href="#" class="text-white hover:text-primary ">Home</a>
+            <a href="#" class="text-white hover:text-primary ">Careers</a>
+            <a href="#" class="text-white hover:text-primary ">About</a>
+            <a href="#" class="text-white hover:text-primary ">Security</a>
+           </nav>
+        </div>
+
+        <div class="border-t border-b border-primary/5 items-center justify-center flex flex-col md:flex-row gap-6 p-6 mb-8 w-[78%] mx-auto">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-message text-primary"></i>
+                <span class="text-white">hello@skillbirdge.com</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone-flip text-primary"></i>
+                <span class="text-white">+91 91813 23 2309</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-primary"></i>
+                <span class="text-white">Somewhere in the World</span>
+            </div>
+        </div>
+
+       <div class="flex flex-col md:flex-row items-center justify-between w-[78%] mx-auto">
+              <div class="flex space-x-4">
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-facebook-f text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-twitter text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-linkedin text-black"></i></a>
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5">
+                YourBank All Rights Reserved
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5 md:mt-0">
+                <a href="#" class="hover:text-primary">Privacy Policy</a>
+
+                <span class="mx-2">|</span>
+
+                <a href="#" class="hover:text-primary">Terms of Service</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Mobile Menu JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex");
+          document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+        });
+
+        closeMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("flex");
+          mobileMenu.classList.add("hidden");
+          document.body.style.overflow = ""; // Re-enable scrolling
+        });
+      });
+    </script>
+   
+    
+</body>
+</html>
