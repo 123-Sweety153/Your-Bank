@@ -56,40 +56,80 @@
     <main class="bg-[#1C1C1C] flex flex-col justify-end md:py-8 w-[78%] mx-auto">
         <section class="mt-5 md:my-14">
             <div class="flex items-center justify-end">
-                <div class="bg-[url(/images/security.png)] bg-cover bg-center md:h-[440px] h-75 md:w-[60%] w-full rounded-2xl shadow"></div>
+                <div class="bg-[url(/images/security.png)] bg-cover bg-center md:h-[440px] h-75 md:w-[55%] w-full rounded-2xl shadow"></div>
                 </div>   
             </div>
 
             <!-- text -->
-            <div class="md:absolute bg-[#1A1A1A] w-[45%] md:p-5 mt-12 md:mt-12 rounded-4xl md:top-55 md:ml-6">
-                <h5 class="text-white mb-3">Welcome to YourBank</h5>
-                <h1 class="text-white font-bold text-center text-4xl md:text-left mb-4">Welcome to <span class="text-primary">YourBank</span><br> Careers!</h1>
-                <p class="text-gray-400 text-sm mt-6 md:mt-6 md:text-left text-center">Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking.</p>  
+            <div class="md:absolute bg-[#1A1A1A] md:w-[50%] md:p-5 mt-12 md:mt-20 rounded-4xl md:top-35 md:ml-2">
+                <h1 class="text-white font-bold text-center md:text-3xl md:text-left text-2xl mb-4">Your Security is Our <span class="text-primary"> <br>Top Priority</span></h1>
+                <p class="text-gray-400 text-sm mt-6 md:mt-6 md:text-left text-center">At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures and advanced technologies to protect your personal and financial data. Rest assured that when you bank with us, your security is our utmost priority.</p>  
             </div>
         </section>
     </main>
 
 
     <!-- Protect Section -->
-     <section class="py-16">
+    <section class="my-16">
         <div class="w-[78%] mx-auto">
             <h2 class="text-white font-bold text-4xl md:text-3xl mb-3">How We <span class="text-primary">Protect You</span></h2>
             <p class="text-gray-400 text-sm">At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times</p>
         </div>
 
-        <div>
-            <div class="grid grid-cols-2">
+        <section class="grid grid-cols-12 mt-10 md:mt-14 gap-2 md:gap-10 w-[78%] mx-auto bg-[#1C1C1C] rounded-3xl">
+
+            <!-- 1st part -->
+            <div class="md:col-span-6 col-span-12">
                 <div>
-                    <img src="images/SIcon1.png" alt="">
-                    <h4 class="text-white font-bold text-xl">Secure Online Banking Platform</h4>
+                    <div class="md:my-6 my-10 bg-[#262626] px-4 py-8 hover:scale-105 transition-all duration-300">
+                        <div class=" flex items-center gap-5">
+                            <img src="images/SIcon1.png" alt="" class="w-16">
+                            <h4 class="text-white text-xl">Secure Online Banking Platform</h4>
+                        </div>
+                        
+                        <p class="text-gray-400">Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <p class="text-gray-400">Our online banking platform is built with multiple layers of security to safeguard your information. We utilize industry-standard encryption protocols to ensure that your data remains confidential and protected during transmission.</p>
-                </div> 
+                 <div>
+                    <div class="md:my-6 my-10 bg-[#262626] px-4 py-8 hover:scale-105 transition-all duration-300">
+                        <div class=" flex items-center gap-5">
+                            <img src="images/SIcon2.png" alt="" class="w-16">
+                            <h4 class="text-white text-xl">Multi-Factor Authentication</h4>
+                        </div>
+                        
+                        <p class="text-gray-400">To enhance the security of your online banking experience, we employ multi-factor authentication. This additional layer of security requires you to provide multiple pieces of identification, such as a password and a one-time verification code, to access your account.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-     </section>
+
+            <!-- 2nd part -->
+            <div class="md:col-span-6 col-span-12">
+                <div>
+                    <div class="md:my-6 my-10 bg-[#262626] px-4 py-8 hover:scale-105 transition-all duration-300">
+                        <div class=" flex items-center gap-5">
+                            <img src="images/SIcon3.png" alt="" class="w-16">
+                            <h4 class="text-white text-xl">Fraud Monitoring</h4>
+                        </div>
+                        
+                        <p class="text-gray-400">We have sophisticated fraud detection systems in place to monitor your accounts for any suspicious activities. Our dedicated team works around the clock to detect and prevent unauthorized transactions, providing you with peace of mind.</p>
+                    </div>
+                </div>
+
+                 <div>
+                    <div class="md:my-6 my-10 bg-[#262626] px-4 py-8 hover:scale-105 transition-all duration-300">
+                        <div class=" flex items-center gap-5">
+                            <img src="images/SIcon4.png" alt="" class="w-16">
+                            <h4 class="text-white text-xl">Secure Mobile Banking</h4>
+                        </div>
+                        
+                        <p class="text-gray-400">Our mobile banking app is designed with the same level of security as our online banking platform. You can confidently access your accounts, make transactions, and manage your finances on the go, knowing that your information is protected.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+    </section>
 
 
     <!--Question Section-->
@@ -99,7 +139,7 @@
             <p class="text-gray-400 text-sm pb-12">Still you have any questions? Contact our Team via support@yourbank.com</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="grid md:grid-cols-2 gap-6 w-[78%] mx-auto">
             <div class="outline outline-primary/5 px-12 py-9 rounded-xl">
                 <h3 class="text-white font-semibold text-xl mb-5 pb-6 border-b border-primary/5">How do I open an account with YourBank?</h3>
 

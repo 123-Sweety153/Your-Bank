@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/7cb2fd1225.js" crossorigin="anonymous"></script>
+    <title>YourBank Apps</title>
+</head>
+<body class="bg-[#191919]">
+    <!--Header Section-->
+    <header class="flex items-center justify-between bg-[#1c1c1c] px-5 py-4 rounded-full mx-auto w-[80%] mt-10 mb-20">
+        <div>
+            <img src="images/Logo.png" alt="">
+        </div>
+
+        <!--Mobile Menu Icon-->
+        <div class="md:hidden">
+            <button class="mobile menu button">
+                <i class="fa-solid fa-bars text-white text-[2rem]"></i> 
+            </button> 
+        </div>
+
+        <!--Nav Menu-->
+        <nav class="hidden md:flex items-center space-x-6 ">
+            <a href="index.html" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="careers.html" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="about.html" class="text-white px-4 py-2  rounded-full hover:bg-[#4b4a4a] transition">About</a>
+            <a href="security.html"  class="text-white px-4 py-2 bg-[#262626] hover:bg-[#4b4a4a] rounded-full transition">Security</a>
+        </nav>
+
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="singup.html" class="text-white hover:text-[#747070] transition">Sign Up</a>
+            <a href="#" class="bg-primary text-[#1c1c1c] px-5 py-2 rounded-full hover:bg-[#d1d1d1]">Login</a>
+        </div>
+    </header>
+
+    <div id="mobile menu" class="fixed flex flex-col bg-[#191919]/95 items-center inset-0 z-50 justify-center hidden">
+        <div class="absolute top-4 right-4">
+            <button class="close menu button">
+                <i class="fa-solid fa-xmark text-white text-[3rem]"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col items-center space-y-6 ">
+            <a href="#" class="text-white hover:text-[#747070] transition">Home</a>
+            <a href="#" class="text-white px-4 py-2 rounded-full hover:bg-[#4b4a4a] transition">Careers</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">About</a>
+            <a href="#" class="text-white hover:text-[#747070] transition">Security</a>
+        </nav>
+    </div>
+
+
+    <!-- Login Part-->
+    <div class="mt-20">
+        <div class="md:p-8 p-2 md:p-7 relative bg-[#262626] rounded-2xl w-[80%] mx-auto">
+            <div>
+                <img src="images/dot.png" alt="" class="absolute top-0 right-0">
+            </div>
+
+           <form action="#" class="w-full md:w-[78%] mx-auto">
+            <div class="text-center">
+                <h2 class="text-[#CAFF33] font-bold text-3xl">Sign Up</h2>
+                <p class="text-gray-400 text-sm pt-5">Welcome back! Please log in to access your account.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-7 md:gap-6 mt-10 md:mt-16 p-4 md:p-0">
+                <input class="w-full md:w-[45%] border-none hover:outline-none bg-[#1A1A1A] py-3 pl-9 rounded-full hover:transition-all hover:scale-105 duration-300 text-gray-400" type="text" placeholder="Enter First Name">
+                <input class="w-full md:w-[45%] border-none hover:outline-none bg-[#1A1A1A] py-3 pl-9 rounded-full hover:transition-all hover:scale-105 duration-300 text-gray-400" type="text" placeholder="Enter Last Name">
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center gap-7 md:gap-6 mt-10 md:mt-16 p-4 md:p-0">
+                <input class="w-full md:w-[45%] border-none hover:outline-none bg-[#1A1A1A] py-3 pl-9 rounded-full hover:transition-all hover:scale-105 duration-300 text-gray-400" type="text" placeholder="Enter your Email">
+                <input class="w-full md:w-[45%] border-none hover:outline-none bg-[#1A1A1A] py-3 pl-9 rounded-full hover:transition-all hover:scale-105 duration-300 text-gray-400" type="text" placeholder="Enter your Password">
+            </div>
+
+            <p class="text-gray-200 font-semibold text-lg text-center md:pt-10 pt-8 underline">Forgot Password?</p>           
+
+           <div class="flex flex-col items-center justify-center gap-4 my-6">
+            <button class="bg-[#CAFF33] w-[80%] md:w-[45%] bg-[#1A1A1A] py-3 rounded-full hover:transition-all hover:scale-105 duration-300">Login</button>
+            <button class="bg-[#333333] w-[80%] md:w-[45%] bg-[#1A1A1A] py-3 rounded-full hover:transition-all hover:scale-105 duration-300">Sign Up</button>
+           </div> 
+           
+           <div class="flex justify-between items-center gap-3">
+            <img src="images/Line1.png" alt="">
+            <h4 class="text-gray-400 text-xl md:text-lg py-3">Or Continue with</h4>
+            <img src="images/Line1.png" alt="">
+           </div>
+
+
+           <div class="flex items-center justify-center gap-4 pt-5">
+            <img src="images/Button1.png" alt="" class="md:w-fit w-[38px]">
+            <img src="images/Button2.png" alt="" class="md:w-fit w-[38px]">
+            <img src="images/Button3.png" alt="" class="md:w-fit w-[40px]">
+           </div>     
+          </form>
+
+               
+        </div>
+    </div>
+
+
+   <!--Testimonial Section-->
+   <section class="py-16">
+    <div class="w-[78%] mx-auto">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between ">
+            <div>
+                <h2 class="text-white font-bold text-2xl md:text-4xl mb-4">Our <span class="text-primary">Testimonials</span></h2>
+                <p class="text-gray-400 pb-12">Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey</p>
+            </div>
+
+            <div class="flex mt-6 md:mt-0">
+                <div class="bg-[#1C1C1C] p-2 rounded-full flex" >
+                    <button class="font-medium bg-primary px-8 py-2 rounded-full cursor-pointer hover:bg-gray-300 transition">For Individuals</button>
+                    <button class="text-white font-medium px-8 py-2">For Businesses</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative mt-12">
+            <div class="flex overflow-hidden gap-6 md:mx-20">
+                <div class="bg-[#1C1C1C] px-8 py-12 rounded-xl min-w-[300px] md:min-w-[350px] flex-1 outline outline-primary/5">
+                    <div class="text-primary text-7xl mb-6 text-center">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-400 font-semibold justify-center text-center mb-8">YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.</p>
+
+                    <p class="text-primary font-medium text-center">Sara T</p>
+                </div>
+
+                <div class="bg-[#1C1C1C] px-8 py-12 rounded-xl min-w-[300px] md:min-w-[350px] flex-1 outline outline-primary/5">
+                    <div class="text-primary text-7xl mb-6 text-center">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-400 font-semibold mb-8 justify-center text-center">I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.</p>
+
+                    <p class="text-primary font-medium text-center">John D</p>
+                </div>
+
+                <div class="bg-[#1C1C1C] px-8 py-12 rounded-xl min-w-[300px] md:min-w-[350px] flex-1 outline outline-primary/5">
+                    <div class="text-primary text-7xl mb-6 text-center">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-400 font-semibold mb-8 justify-center text-center">I love the convenience of YourBank's mobile banking app. It's simple and intuitive to navigate, making it easy to manage my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.</p>
+
+                    <p class="text-primary font-medium text-center">Emily</p>
+                </div>
+            </div>
+
+            <button class="absolute top-1/2 -left-4 -translate-y-1/2 bg-primary/5 px-4 py-3 rounded-full hover:bg-primary/50 cursor-pointer transition-all">
+                <i class="fa-solid fa-arrow-left text-primary"></i>
+            </button>
+
+            <button class="absolute top-1/2 -right-4 -translate-y-1/2 bg-primary/5 px-4 py-3 rounded-full hover:bg-primary/50 cursor-pointer transition-all">
+            <i class="fa-solid fa-arrow-right text-primary"></i>
+          </button>
+        </div>     
+    </div>
+</section> 
+
+
+<!--Footer Section-->
+<footer class="bg-[#1C1C1C] py-16">
+    <div class="w-[78%] mx-auto">
+        <div class="flex flex-col justify-center items-center mb-10">
+           <img src="images/Logo.png" alt="">
+
+           <nav class="flex items-center space-x-8 mb-10">
+            <a href="#" class="text-white hover:text-primary ">Home</a>
+            <a href="#" class="text-white hover:text-primary ">Careers</a>
+            <a href="#" class="text-white hover:text-primary ">About</a>
+            <a href="#" class="text-white hover:text-primary ">Security</a>
+           </nav>
+        </div>
+
+        <div class="border-t border-b border-primary/5 items-center justify-center flex flex-col md:flex-row gap-6 p-6 mb-8 w-[78%] mx-auto">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-message text-primary"></i>
+                <span class="text-white">hello@skillbirdge.com</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone-flip text-primary"></i>
+                <span class="text-white">+91 91813 23 2309</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-primary"></i>
+                <span class="text-white">Somewhere in the World</span>
+            </div>
+        </div>
+
+       <div class="flex flex-col md:flex-row items-center justify-between w-[78%] mx-auto">
+              <div class="flex space-x-4">
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-facebook-f text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-twitter text-black"></i></a>
+
+                <a href="#" class="bg-primary rounded-full px-6 py-4 hover:bg-white hover:text-black transition-all"><i class="fa-brands fa-linkedin text-black"></i></a>
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5">
+                YourBank All Rights Reserved
+              </div>
+
+              <div class="text-gray-300 text-sm mt-5 md:mt-0">
+                <a href="#" class="hover:text-primary">Privacy Policy</a>
+
+                <span class="mx-2">|</span>
+
+                <a href="#" class="hover:text-primary">Terms of Service</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+ <!-- Mobile Menu JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const closeMenuButton = document.getElementById("close-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("hidden");
+          mobileMenu.classList.add("flex");
+          document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+        });
+
+        closeMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("flex");
+          mobileMenu.classList.add("hidden");
+          document.body.style.overflow = ""; // Re-enable scrolling
+        });
+      });
+    </script>
+
+
+
+</body>
+</html>
